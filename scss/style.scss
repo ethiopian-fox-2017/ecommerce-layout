@@ -1,0 +1,59 @@
+
+/* VARIABLES FOR USE */
+
+$sea: rgba(64,255,173,0.7);
+$white-glass : rgba(255,255,255,0.5);
+
+/* TOP NAVBAR */
+
+.nav {
+  background-color: $sea;
+  padding: 1em 0;
+  margin-bottom: 1em ;
+  .nav-right {
+    padding: 0 2em;
+  }
+  .nav-toggle {
+    padding: 0 2em;
+  }
+}
+
+.shoop {
+  font-size: 2em;
+  padding: 0 1.5em;
+}
+
+/* COLUMNS */
+
+.columns {
+  margin: auto;
+  width: 100%;
+}
+
+.panel {
+  position: fixed;
+  width: 22%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* TILES */
+
+.image-header {
+  background-color: $white-glass;
+}
+
+.p-category {
+  text-align: center;
+}
+
+.category-title {
+  border-bottom: solid 1px;
+}
+
+/* ICONS */
+
+.i-category {
+  float: left;
+}
+
