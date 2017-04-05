@@ -1,0 +1,92 @@
+/*login-register*/
+
+.signup h1{
+  text-align: center;
+  color : green;
+}
+.signup p{
+  text-align: center;
+}
+.button a{
+  float: right;
+  margin-right: 201px;
+  margin-left: -197px;
+}
+.customform {
+    padding: 0 201px;
+}
+
+
+/*Home*/
+.brand-logo{
+  margin-left: 20px;
+  margin-right: 50px;
+}
+#nav-mobile{
+  float: left;
+  margin-right: 668px;
+}
+
+/*.icons{
+  float: right;
+  font-size: 50px;
+  margin-right:30px;
+}*/
+.collection{
+  margin-left: 40px;
+  margin-top: 24px;
+}
+.row .col.s3 {
+    width: 24%;
+}
+.carousel.carousel-slider .carousel-item {
+    margin-top: 24px;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slider .slides{
+  margin-top: 24px;
+}
+.item {
+    margin-left: 10px;
+}
+.btn{
+  padding: 0 1em;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+.card .card-content{
+  padding: 12px;
+}
+.card .card-action{
+  padding: 6px 1px;
+}
+i.material-icons.icons {
+    padding-left: 120px;
+}
+.material-icons{
+  font-size: 19px;
+}
+.col.s12.m3:hover {
+  box-shadow: 1px 4px 18px 5px #888;
+  cursor: pointer;
+}
+
+/*footer*/
+
+.container {
+    text-align: center;
+}
+.col.l6.s12.image img {
+    width: 41px;
+}
+.nav-wrapper.navbarcust {
+    background-color: #03a9f4 ;
+}
+footer.page-footer.footercust {
+    background-color: #03a9f4;
+}
