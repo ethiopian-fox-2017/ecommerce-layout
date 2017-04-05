@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>E-Commerce</title>
+      <script src="js/jquery-3.2.0.min.js"></script>
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" href="css/style.css" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+  </head>
+  <body>
+
+  <!------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- SIDEBAR -->
+
+    <ul id="slide-out" class="side-nav">
+      <li><div class="userView">
+        <div class="background">
+        <img id="pojok" src="img/shop.jpg">
+      </div>
+        <img class="circle" src="https://avatars3.githubusercontent.com/u/25143119?v=3&s=460">
+        <span class="black-text name">Username</span>
+        <span class="black-text email">User's email</span>
+      </div></li>
+      <li><a class="waves-effect" href="#!">Notebook</a></li>
+      <li><a class="waves-effect" href="#!">Gadget</a></li>
+      <li><a class="waves-effect" href="#!">Photography</a></li>
+      <li><a class="waves-effect" href="#!">Networking</a></li>
+      <li><a class="waves-effect" href="#!">Software</a></li>
+      <li><a class="waves-effect" href="#!">Peripheral</a></li>
+      <br><br>
+      <li><a class="waves-effect" href="#!">Account</a></li>
+      <li><a class="waves-effect" href="#!">Logout</a></li>
+    </ul>
+
+  <!------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- NAVBAR -->
+
+    <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper deep-orange lighten-1">
+            <a href="#" data-activates="slide-out" class="button-collapse nav-visible" ><i class="material-icons">menu</i></a>
+            <a href="#!" class="brand-logo left" id="logo">teknopedia</a>
+            <form class="left hide-on-med-and-down">
+              <div class="input-field">
+                <input id="search" type="search" placeholder="click here to search..." required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+            <ul class="right hide-on-med-and-down">
+              <li><a class="modal-trigger waves-effect waves-light" href="#modal1">Login / Signup</a></li>
+              <li><a class="modal-trigger waves-effect waves-light" href="#modal3">My Cart<i class="material-icons right">shopping_cart</i></a></li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+  <!------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- CAROUSEL -->
+
+    <div class="carousel carousel-slider">
+      <a class="carousel-item" href="#one!"><img src="img/a.jpg"></a>
+      <a class="carousel-item" href="#two!"><img src="img/b.jpg"></a>
+      <a class="carousel-item" href="#three!"><img src="img/c.jpg"></a>
+      <a class="carousel-item" href="#four!"><img src="img/d.jpg"></a>
+      <a class="carousel-item" href="#five!"><img src="img/e.jpg"></a>
+    </div>
+
+  <!------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- LOGIN MODAL STRUCTURE -->
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <h4>Login</h4>
+        <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <p>Haven't registered yet? Please <a class="modal-trigger waves-effect waves-light" href="#modal2" onclick="close()">Signup</a> first.</p>
+        </form>
+      </div>
+
+      <button class="btn waves-effect waves-light z-depth-4 right" type="submit" name="action">Login<i class="material-icons right">send</i></button>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+      </div>
+    </div>
+
+
+  <!------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- SIGNUP MODAL STRUCTURE -->
+
+  <!-- Modal Structure -->
+  <div id="modal2" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Signup</h4>
+      <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="password" type="password" class="validate">
+            <label for="password">Password</label>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <button class="btn waves-effect waves-light z-depth-4 right" type="submit" name="action">Signup<i class="material-icons right">send</i></button>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- MY CART MODAL STRUCTURE -->
+
+    <!-- Modal Structure -->
+    <div id="modal3" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <h4>Your Shopping Cart</h4>
+        <p>List of goods:</p>
+      <button class="btn waves-effect waves-light z-depth-4 right" type="submit" name="action">Checkout<i class="material-icons right">send</i></button>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Continue Shopping</a>
+      </div>
+    </div>
+
+  <!------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- LIST OF ITEMS -->
+
+     <h2 id="header">Hot Items</h2>
+
+     <div class="row">
+       <div class="col s12 m6 l3 bordered">
+          <img src="img/camera.jpg">
+          <p id="left">Xiaomi Yi Mirrorless Digital Camera 12-40mm F3.5-5.6<br><br>Color: Black</p>
+          <h4 id="left"><b>Rp 4.500.000</b></h4>
+          <hr>
+          <p id="left">Stok tersedia</p>
+          <button class="btn waves-effect waves-light z-depth-4" type="submit" name="action" onclick="Materialize.toast('Added to Cart', 2000, 'rounded')">add to cart<i class="material-icons right">send</i></button>
+       </div>
+
+       <div class="col s12 m6 l3 bordered">
+          <img src="img/cctv.jpg">
+          <p id="left">Xiaomi Yi Dome Smart CCTV IP HD 720P Night Vision<br><br>Color: White</p>
+          <h4 id="left"><b>Rp 750.000</b></h4>
+          <hr>
+          <p id="left">Stok tersedia</p>
+          <button class="btn waves-effect waves-light z-depth-4" type="submit" name="action" onclick="Materialize.toast('Added to Cart', 2000, 'rounded')">add to cart<i class="material-icons right">send</i></button>
+       </div>
+
+       <div class="col s12 m6 l3 bordered">
+          <img src="img/mouse.jpg">
+          <p id="left">Xiaomi Yi Wireless Mouse Portable (ORIGINAL)<br><br>Color: Golden</p>
+          <h4 id="left"><b>Rp 300.000</b></h4>
+          <hr>
+          <p id="left">Stok tersedia</p>
+          <button class="btn waves-effect waves-light z-depth-4" type="submit" name="action" onclick="Materialize.toast('Added to Cart', 2000, 'rounded')">add to cart<i class="material-icons right">send</i></button>
+       </div>
+
+       <div class="col s12 m6 l3 bordered">
+          <img src="img/router.jpg">
+          <p id="left">TP-LINK 450Mbps Wireless Router Type: TL-WR940N<br><br>Color: Black</p>
+          <h4 id="left"><b>Rp 350.000</b></h4>
+          <hr>
+          <p id="left">Stok tersedia</p>
+          <button class="btn waves-effect waves-light z-depth-4" type="submit" name="action" onclick="Materialize.toast('Added to Cart', 2000, 'rounded')">add to cart<i class="material-icons right">send</i></button>
+       </div>
+
+       <div class="row">
+         <div class="col s12 m6 l3 bordered">
+            <img src="img/jam.jpg">
+            <p id="left">Xiaomi Amazfit Sport Smartwatch Bluetooth 4.0k<br><br>Color: Black</p>
+            <h4 id="left"><b>Rp 1.700.000</b></h4>
+            <hr>
+            <p id="left">Stok tersedia</p>
+            <button class="btn waves-effect waves-light z-depth-4" type="submit" name="action" onclick="Materialize.toast('Added to Cart', 2000, 'rounded')">add to cart<i class="material-icons right">send</i></button>
+         </div>
+
+         <div class="col s12 m6 l3 bordered">
+            <img src="img/software.jpg">
+            <p id="left">Kaspersky Small Office Security - 10 User + 1 Server<br><br>Color: -</p>
+            <h4 id="left"><b>Rp 3.500.000</b></h4>
+            <hr>
+            <p id="left">Stok tersedia</p>
+            <button class="btn waves-effect waves-light z-depth-4" type="submit" name="action" onclick="Materialize.toast('Added to Cart', 2000, 'rounded')">add to cart<i class="material-icons right">send</i></button>
+         </div>
+
+         <div class="col s12 m6 l3 bordered">
+            <img src="img/laptop.jpg">
+            <p id="left">Asus E202SA-FD001D / FD002D / FD003D 2GB 500GB DOS<br><br>Color: Red</p>
+            <h4 id="left"><b>Rp 3.000.000</b></h4>
+            <hr>
+            <p id="left">Stok tersedia</p>
+            <button class="btn waves-effect waves-light z-depth-4" type="submit" name="action" onclick="Materialize.toast('Added to Cart', 2000, 'rounded')">add to cart<i class="material-icons right">send</i></button>
+         </div>
+
+         <div class="col s12 m6 l3 bordered">
+            <img src="img/actioncam.jpg">
+            <p id="left">Xiaomi Yi 2 4K 155 Degrees Wide Angle (China Language)<br><br>Color: Rose Gold</p>
+            <h4 id="left"><b>Rp 2.600.000</b></h4>
+            <hr>
+            <p id="left">Stok tersedia</p>
+            <button class="btn waves-effect waves-light z-depth-4" type="submit" name="action" onclick="Materialize.toast('Added to Cart', 2000, 'rounded')">add to cart<i class="material-icons right">send</i></button>
+         </div>
+
+     </div>
+
+  <!------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- FOOTER -->
+
+     <footer class="page-footer deep-orange lighten-1">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            © 2017 Copyright Laksono Suryadi
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+
+  </body>
+
+  <!------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- JAVASCRIPT -->
+
+  <script>
+    $('.modal').modal();
+    $(".button-collapse").sideNav();
+    $('.carousel.carousel-slider').carousel({fullWidth: true});
+    $(document).ready(function(){
+      autoplay()
+    })
+    function autoplay() {
+      $('.carousel').carousel('next');
+      setTimeout(autoplay, 4500)
+    }
+    function close() {
+      $('#modal1').modal('close');
+    }
+  </script>
+
+</html>
