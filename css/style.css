@@ -1,0 +1,169 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+/* navigasi pertama */
+.field.search-custom {
+    padding-top: 10px;
+    width: 500px;
+    height: auto;
+}
+
+div#nav-menu.custom-nav-atas a {
+    padding: 0 10px;
+}
+
+div#nav-menu.custom-nav-atas {
+    padding: 12px 0px 11px 11px;
+}
+
+div#nav-menu.custom-nav-atas a {
+    padding: 0 10px;
+}
+
+div#nav-menu.custom-nav-atas {
+    font-size: 12px;
+}
+
+div#nav-menu span {
+    padding: 0 7px;
+}
+
+/* banner */
+.hero-body {
+  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-bottom: 200px;
+  text-align: center;
+  background: url('../image/banner.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.top-section {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* carosel */
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 30%;
+    margin: auto;
+}
+
+a.left.carousel-control {
+    background: #fff;
+
+}
+
+a.right.carousel-control {
+    background: #fff;
+}
+
+/* konten barang */
+
+article.tile.is-child.box.custom-box {
+    border-radius: 0px;
+}
+
+section#promo {
+    padding: 25px 40px;
+}
+
+.item {
+    border: 1px solid #ccc;
+}
+
+.item:hover {
+    box-shadow: 1px 0px 9px 0px #888;
+}
+
+.descipsi {
+    padding: 10px 10px;
+}
+
+.descipsi p {
+  font-size: 13px;
+}
+
+
+/* before footer */
+section#before-footer {
+    background: #f5f5f5;
+    height: 270px
+}
+
+.metode-pembayaran {
+    padding: 20px 0px;
+}
+
+.col-md-3.button-left {
+    padding: 20px 0;
+}
+
+.col-md-3.button-left p {
+    text-align: center;
+    border: 1px solid #000;
+}
+
+p.nomor-user {
+    background: #ccc;
+    width: 150px;
+}
+
+p.button-help input {
+    width: 241px;
+}
+/* custom footer */
+#footer {
+  background: #061D25;
+}
+
+.social-media {
+  background: #061D25;
+  padding: 10px 0;
+  text-align: center;
+}
+.social-media a {
+  color: #fff;
+  font-size: 13px;
+  padding: 0 16px;
+  transition: all .5s ease;
+}
+.social-media a:first-child {
+  /*border-left: 1px solid #70726F;*/
+}
+.social-media a:hover {
+  color: white;
+}
+
+.right-side.social-media h3 {
+    color: #fff;
+    font-size: 13px;
+}
+
+.left-side.col-md-4 {
+    color: #fff;
+    font-size: 10px;
+}
+
+.col-md-8.sosial {
+    padding: 18px 0px;
+    margin: 2px -137px;
+}
+
+.right-side.social-media.col-md-6 {
+    float: right;
+    margin: 0 -265px;
+}
+
+.left-side.col-md-4 {
+    color: #fff;
+    font-size: 10px;
+    padding: 26px 0px;
+}
